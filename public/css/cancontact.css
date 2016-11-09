@@ -1,0 +1,112 @@
+/* -------------------------------------------------------------- */
+/* ------------------------ CONTACT FORM ------------------------ */
+/* -------------------------------------------------------------- */
+.contact-row {
+	padding: 20px 0;
+}
+
+.contact-row h2 {
+	text-align: center;
+	font-size: 2.5em;
+	font-weight: normal;
+	color: #000000;
+	padding: 20px 0 25px 0;
+}
+
+.contact-row form,
+.contact-row .in-progress-row,
+.contact-row .confirmation-row,
+.contact-row .error-row {
+	width: 100%;
+	max-width: 550px;
+	margin: 0 auto;
+	margin-bottom: 25px;
+}
+
+.contact-row form {
+	display: block;
+}
+
+.contact-row form input,
+.contact-row form textarea {
+	box-sizing: border-box;
+	width: 100%;
+	margin-bottom: 15px;
+	border-style: none; 
+	padding: 8px 15px;
+	font-size: 1.25em;
+	font-style: italic;
+	background-color: #342d1e;
+}
+
+/* Placeholder text color set separately for each browser */
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #86744e;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #86744e;
+   opacity: 1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #86744e;
+   opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color: #86744e;
+}
+
+.contact-row form textarea {
+	height: 120px;
+}
+
+.contact-row .send-button {
+	background-color: #000000;;
+	color: #86744e;
+	box-sizing: border-box;
+}
+
+.contact-row .send-button:hover {
+	box-shadow: 2px 2px 4px #000000;
+	text-shadow: 1px 0px #86744e;
+}
+
+
+/* -------------------------------------------------------------- */
+/* --------------- CONFIRMATION & ERROR MESSAGES ---------------- */
+/* -------------------------------------------------------------- */
+
+
+.contact-row .in-progress-row,
+.contact-row .confirmation-row,
+.contact-row .error-row{
+	display: none;
+	box-sizing: border-box;
+	text-align: center;
+	background-color: #000000;
+	min-height: 300px;
+	padding: 15px;
+	font-size: 1.3em;
+	margin-top: 20px;
+}
+
+.contact-row .error-row { 
+	background-color: #000000;
+} 
+
+.contact-row .fenice {
+	height: 250px;
+	width: auto;
+}
+
+.contact-row .in-progress-row h2,
+.contact-row .confirmation-row h2,
+.contact-row .error-row h2 {
+	color: #86744e;
+}
+
+.contact-row .confirmation-row p,
+.contact-row .error-row p {
+	margin: 0;
+	padding-bottom: 10px;
+}

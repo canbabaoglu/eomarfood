@@ -1,0 +1,217 @@
+/* -------------------------------------------------------------- */
+/* -------------- OVERALL STYLES & SHARED ELEMENTS -------------- */
+/* -------------------------------------------------------------- */
+
+ @font-face {
+    font-family: 'BodoniBkBtBook';
+    src: url('../fonts/font_-_truetype_-_bodoni_book_bt.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'BodoniBkBtBook';
+    src: url('../fonts/BodoniBkBTBookItalic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+body {
+	box-sizing: border-box;
+	background: linear-gradient(#000000, #86744e);
+	position: relative;	
+	color: #86744e;
+	font-family: 'BodoniBkBtBook'; 
+}
+
+.page-wrapper {
+	max-width: 1020px;
+	margin: 0 auto;
+}
+
+.page-background {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	max-width: 1020px;
+	background-color: #000000;
+	opacity: 0.40;
+	z-index: -10;
+}
+
+.goldborder-row {
+	position: absolute;
+	width: 100%;
+	bottom: -8px;
+	height: 18px; 
+}
+
+.goldborder {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+}
+
+.clickable {
+	cursor: pointer;
+}
+
+.page-content {
+	padding-top: 153px;
+}
+
+.content-row {
+	padding: 0px 60px;
+}
+
+/* -------------------------------------------------------------- */
+/* ------------------------ HOME SECTION ------------------------ */
+/* -------------------------------------------------------------- */
+
+.home-row {
+	min-height: 500px;
+}
+
+.slideshow-row {
+	display:none;
+}
+
+.slideshow-row:first-child{
+	display: block;
+}
+
+.banner-message-row {
+	top: 250px;
+	padding: 10px 0;
+}
+
+.banner-message-row h1,
+.banner-message-row p {
+	text-align: center;
+	font-style: italic;
+}
+
+.banner-message-row h1 {
+	padding-top: 8px;
+	font-size: 3.25em;
+	font-weight: normal;
+}
+
+.banner-message-row p {
+	font-size: 1.75em;
+	margin: 0;
+}
+
+.banner-background-row {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	z-index: -1;
+}
+
+.banner-background-col {
+	float: none;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.banner-background {
+	width:100%;
+	max-width: 600px;
+	height: auto;
+	
+}
+
+.banner-cta {
+	display: none;
+	cursor: pointer;
+}
+
+.banner-cta h1,
+.static-banner-cta h1 {
+	padding-top: 25px;
+}
+
+.banner-cta h1:hover,
+.static-banner-cta h1:hover {
+	font-weight: bolder;
+}
+
+.banner-cta .black {
+	color: #000;
+}
+
+.slideshow-row {
+	overflow: hidden;
+}
+
+.slide-image {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: auto;
+	z-index: -5;
+}
+
+
+/* -------------------------------------------------------------- */
+/* ---------------------- ABOUT US SECTION ---------------------- */
+/* -------------------------------------------------------------- */
+
+.about-us-row .content-row {
+	text-align: center;
+	padding: 25px 0;
+}
+
+.story {
+	font-size: 1.4em;
+	line-height: 1.4;
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+.fenice {
+	height: 300px;
+	width: auto;
+}
+
+
+/* -------------------------------------------------------------- */
+/* -------------------- PRODUCT LINES SECTION ------------------- */
+/* -------------------------------------------------------------- */
+
+.product-lines-row .content-row {
+	padding: 0;
+}
+
+.brand-logo, 
+.tab-image {
+	vertical-align: middle;
+}
+
+.brand-logo {
+	max-height: 120px;
+	width: auto;
+}
+
+.tab-image.horizontal {
+	width: 500px;
+	height: auto;
+	padding: 0 50px;	
+}
+
+.tab-image.vertical {
+	height: 500px;
+	width: auto;
+	padding: 0 70px;	
+}
+
+.product-lines-row .story {
+	margin: 0 70px 25px 20px;
+}
+
+.product-lines-row .story:last-child {
+	margin-bottom: 0;
+}
