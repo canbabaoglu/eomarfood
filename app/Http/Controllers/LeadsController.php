@@ -56,7 +56,7 @@ class LeadsController extends Controller
 		
 		// email to prospect
 		
-		Mail::send('emails.leads.confirm', $input, function($message) use ($input)
+		Mail::send('emails.leads.confirm', ['input'=>$input], function($message) use ($input)
 		{
 			$message->to($input['email'])->subject('Thank you for contacting EomarFood!');
 		});
