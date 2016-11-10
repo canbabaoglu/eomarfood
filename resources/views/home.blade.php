@@ -374,13 +374,14 @@
 				<!-- Contact Form -->
 				<div form="row" class="contact-form-row">
 					<h2> Contact us know for more information </h2>
+					{{ Form::open(['route'=>'leads.store', 'class'=>'contact-form']) }}
 					<form class="contact-form" method="post">
 						<input name="name" type="text" placeholder="Your name" required/>
 						<input name="email" type="email" placeholder="Your email" required/>
 						<input name="phoneNo" type="text" placeholder="Your phone number" required/>
 						<textarea name="message_body" placeholder="Your message" required></textarea> 
 						<input name="submit" class="send-button clickable" type="submit" value="Send your message" />
-					</form>
+					{{ Form::close() }}
 				</div>
 
 				

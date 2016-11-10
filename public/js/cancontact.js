@@ -2,24 +2,19 @@
 $(".contact-row form").submit(function(event) {
 	event.preventDefault();
 
+	var form = $(this);
+
 	
-	//get input field values data to be sent to server
-    post_data = {
-        'name'          : $('input[name=name]').val(), 
-        'email'         : $('input[name=email]').val(), 
-        'phoneNo'       : $('input[name=phoneNo]').val(),  
-        'message_body'  : $('textarea[name=message_body]').val()
-    };
 
     $('.contact-row .send-button').attr('disabled', 'disabled');
 
     $.ajax({
-		type: "POST",
-		url: "http://eomarfoodlaravel.cangostudios.com/leads",
-		data: post_data,
-		dataType: "json",
-		success: processJson, 
-		error: connectionError 
+		type     : "POST",
+		url      : form.prop('action'),
+		data     : form.serialize(),
+		dataType : "json",
+		success  : processJson, 
+		error    : connectionError 
 	});
 
 	function processJson(response) {
